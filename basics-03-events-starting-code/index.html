@@ -21,8 +21,8 @@
       <button @click="incrementCounter(5)">Add 5</button>
       <button @click="decrementCounter(5)">Subtract 5</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" @input="setName">
-      <p>Name: {{ name }}</p>
+      <input type="text" @input="setName" @keyup.enter="confirmInput">
+      <p>Name: {{ confirmedName }}</p>
       <form @submit.prevent="submitForm">
         <input type="text">
         <button>Submit</button>
