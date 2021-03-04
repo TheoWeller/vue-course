@@ -4,6 +4,7 @@ const app = Vue.createApp({
       counter: 0,
       name: "",
       confirmedName: "",
+      // fullname: ""
     };
   },
   computed: {
@@ -12,6 +13,12 @@ const app = Vue.createApp({
       //Typically more performant than using methods to output values
       if (this.name === '') return '';
       return this.name + ' ' + 'Weller';
+    }
+  },
+  watch: {
+    //Used to run code in reaction to a property changing 
+    counter(value){
+      if(value > 50) this.counter = 0;
     }
   },
   methods: {
