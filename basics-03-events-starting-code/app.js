@@ -6,6 +6,14 @@ const app = Vue.createApp({
       confirmedName: "",
     };
   },
+  computed: {
+    fullname(){
+      //Use computed properties like variables
+      //Typically more performant than using methods to output values
+      if (this.name === '') return '';
+      return this.name + ' ' + 'Weller';
+    }
+  },
   methods: {
     confirmInput(){
       this.confirmedName = event.target.value;
