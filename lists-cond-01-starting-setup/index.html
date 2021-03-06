@@ -27,6 +27,8 @@
         <!-- v-else has to be used on an element direcently under element using v-if -->
         <!-- v-show will set display to none - can be more porformant for elements that are frequently hidden -->
         <li v-for="(goal, index) in goals" >{{ goal }} - {{ index }}</li>
+        <!-- v-for can loop through arrays and objects -->
+        <!-- Example: <li v-for='(value, key) in {name: "Thaddy", age: 26}' >{{ key }} - {{ value }}</li> -->
       </ul>
     </section>
   </body>
