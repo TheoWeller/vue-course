@@ -23,7 +23,8 @@
       <p v-if="goals.length === 0">
         No goals have been added yet - please start adding some!
       </p>
-      <ul>
+      <ul v-else="goals.length > 0">
+        <!-- v-else has to be used on an element direcently under element using v-if -->
         <li>Goal</li>
       </ul>
     </section>
