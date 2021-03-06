@@ -19,20 +19,17 @@
     <section id="styling">
       <div
         @click='boxSelected("A")'
-        class="demo"
-        :class="{active: boxASelected}"
+        :class="['demo', {active: boxASelected}]"
       >
       </div>
       <div
         @click='boxSelected("B")'
-        class="demo"
-        :class="{active: boxBSelected}"
+        :class="['demo', {active: boxBSelected}]"
       >
       </div>
       <div
         @click='boxSelected("C")'
-        class="demo"
-        :class="{active: boxCSelected}"
+        :class="['demo', {active: boxCSelected}]"
       >
       </div>
     </section>
