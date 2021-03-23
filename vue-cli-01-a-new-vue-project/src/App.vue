@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h2>My friends!</h2>
+        <header><h1>My friends!</h1></header>
         <ul>
             <friend-contact></friend-contact>
             <friend-contact></friend-contact>
@@ -15,12 +15,6 @@ export default {
         return {
             friends: [
                 {
-                    id: "Brennan",
-                    name: "Brennan Kelly",
-                    phone: "(505) 686-3746",
-                    email: "brennan@spins.com"
-                },
-                {
                     id: "Tom",
                     name: "Tom Kelly",
                     phone: "(505) 486-3746",
@@ -31,3 +25,7 @@ export default {
     }
 };
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+</style>
