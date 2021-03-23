@@ -44,6 +44,12 @@ export default {
       // validator: (value) => value === "1" || value === "0"  
     }
     },
+  // emits: {
+  //   'toggle-favorite': (id) => {
+  //     if (id) return true;
+  //     else return false;
+  //   },
+  // },
   methods: {
     toggleDetails() { this.detailsAreVisible = !this.detailsAreVisible; },
     toggleFavorite() { this.$emit('toggle-favorite', this.id); }
