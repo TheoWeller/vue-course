@@ -13,6 +13,7 @@
         {{ emailAddress }}
       </li>
     </ul>
+    <button @click="deleteFriend">Delete</button>
   </li>
 </template>
 
@@ -49,15 +50,11 @@ export default {
       // validator: (value) => value === "1" || value === "0"  
     },
     },
-  // emits: {
-  //   'toggle-favorite': (id) => {
-  //     if (id) return true;
-  //     else return false;
-  //   },
-  // },
+  emits: ['toggle-favorite', 'delete-contact'],
   methods: {
     toggleDetails() { this.detailsAreVisible = !this.detailsAreVisible; },
     toggleFavorite() { this.$emit('toggle-favorite', this.id); },
+    deleteFriend() { this.$emit('delete-contact', this.id); },
   }
 };
 </script>
