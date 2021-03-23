@@ -18,6 +18,11 @@
 
 <script>
 export default {
+  data(){
+    return {
+      detailsAreVisible: false
+    }
+  },
   // props:['name', 'phoneNumber', 'emailAddress', 'isFavorite'],
   // props: {name: String, phoneNumber: String, emailAddress: String, isFavorite: String},
   props: {
@@ -42,7 +47,7 @@ export default {
       required: false,
       default: false,
       // validator: (value) => value === "1" || value === "0"  
-    }
+    },
     },
   // emits: {
   //   'toggle-favorite': (id) => {
@@ -52,7 +57,7 @@ export default {
   // },
   methods: {
     toggleDetails() { this.detailsAreVisible = !this.detailsAreVisible; },
-    toggleFavorite() { this.$emit('toggle-favorite', this.id); }
+    toggleFavorite() { this.$emit('toggle-favorite', this.id); },
   }
 };
 </script>
