@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-header></the-header>
+    <TheHeader />
     <badge-list></badge-list>
     <user-info
       :full-name="activeUser.name"
@@ -11,7 +11,17 @@
 </template>
 
 <script>
+//Local component registration demo
+import TheHeader from './components/TheHeader.vue';
+import BadgeList from './components/BadgeList.vue';
+import UserInfo from './components/UserInfo.vue';
+
 export default {
+  components: {
+    TheHeader,
+    BadgeList,
+    UserInfo
+  },
   data() {
     return {
       activeUser: {
