@@ -5,7 +5,7 @@
     <teleport to='body'>
         <error-alert v-if="inputInvalid">
             <h2>Input invalid</h2>
-            <p>Please enter at least somecharacters...</p>
+            <p>Empty goals are allowed fam...</p>
             <button @click="confirmError">Ok</button>
         </error-alert>
     </teleport>
